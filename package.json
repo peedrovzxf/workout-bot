@@ -1,0 +1,26 @@
+{
+  "name": "workout-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot for handling workouts",
+  "license": "ISC",
+  "author": "peedrovzxf",
+  "type": "module",
+  "main": "dest/core/bootstrap.js",
+  "scripts": {
+    "dev": "ts-node src/core/bootstrap.ts",
+    "build": "tsc",
+    "start": "node dest/core/bootstrap.js",
+    "run": "npm run start",
+    "clean": "rm -rf dest"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "discord.js": "14.24.2",
+    "dotenv": "17.2.3",
+    "pino": "10.1.0"
+  }
+}
