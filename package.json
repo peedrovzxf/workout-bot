@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "ts-node src/core/bootstrap.ts | pino-pretty",
     "build": "tsc",
-    "start": "node dest/core/bootstrap.js",
+    "start": "node dest/core/bootstrap.js | pino-pretty",
     "run": "npm run start",
     "clean": "rm -rf dest"
   },
