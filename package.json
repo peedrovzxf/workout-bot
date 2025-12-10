@@ -4,10 +4,10 @@
   "description": "A Discord bot for handling workouts",
   "license": "ISC",
   "author": "peedrovzxf",
-  "type": "module",
+  "type": "commonjs",
   "main": "dest/core/bootstrap.js",
   "scripts": {
-    "dev": "ts-node src/core/bootstrap.ts",
+    "dev": "ts-node src/core/bootstrap.ts | pino-pretty",
     "build": "tsc",
     "start": "node dest/core/bootstrap.js",
     "run": "npm run start",
